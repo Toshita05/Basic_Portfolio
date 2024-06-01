@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.4.4/umd/popper.min.js"></script>
+    <title>Portfolio</title>
+</head>
+<style>
+    body{background-color:black;
+    color: black;}
+    .head{background-color: darkslategray;
+          color: white;
+          position: fixed;
+          width: 1350px;
+          padding:5px;
+          justify-content: space-between;
+          align-items: center;
+         font-weight:bolder;
+         font-size: large;
+         font-family:'Arial Narrow Bold';
+          }
+    .navbar{background-color: black;}
+    .navbar a{
+        font-weight: bold;
+        float: right;
+        color: white;
+        padding:5px;
+        margin-left: 20px;
+        transition: .3s;
+         }
+    .navbar a:active{
+                    color: cyan;}
+    .navbar a:hover{
+        background-color:lightcyan; 
+        color:black;}
+ #name{color: aquamarine;}
+ #des:hover{color: cyan;}
+ .Page1{
+        position: relative;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 70px 10% 0;
+    }
+    
+   
+.himg{
+    border-radius: 150px;
+    animation-direction: normal;
+}
+.media{
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    background:white;
+    transition: .5s  ease-in-out;
+  
+}
+.media a:hover{
+    background:rgb(100, 248, 248);
+    color: rgb(99, 250, 242);
+}
+.Home{
+    color: aliceblue;
+}
+.button{
+    color: aqua;
+}
+.button:hover{background-color: beige;
+              color: black;}
+.Start{font-size: large;
+color: white;}
+
+
+   
+</style>
+ 
+<body>
+    <header class="head">
+        <a class="Start">Portfolio.</a>
+        <nav class="navbar">
+            <a href="#">Contact</a>
+            <a href="#">About</a>
+            <a href="#">Portfolio</a>
+            <a href="Portfolio.html" class="active">Home</a>
+        </nav>
+    </header>
+    <container class="Page1">
+    <div class="Home">
+            <h3 > Hi, I am </h3>
+            <h2 id="name">Toshita Das</h2>
+            <h3 >A <span id="des">Frontend Developer</span></h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur molestiae iure architecto adipisci temporibus illo dicta est itaque hic dolor neque natus maxime exercitationem veritatis magnam, doloremque officiis numquam et?</p>
+        <div class="media">
+            <a href="#"><img src="data:image/png;base64,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"/></a>
+            <a href="#"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEgAAABICAYAAABV7bNHAAAAAXNSR0IArs4c6QAAA4xJREFUeF7tmlnITVEUx38fKYp4MDx4kSmhvCgeREkZkqIkQ3mRIWM8SBnK8CLKkOnBgzKUZJ5KniRDoUSGlBQv8oCIEFp1Tt1vuHetde937z333LVfvofz3/us/++ub++19z4tRCtJoCX4lCYQgJQMCUABqLJJJDIoMigyqDICVcigAcB0YBjwF3gBXAW+VjXSOg3unYP2ABs6iPUXsAvYXicfVXutB9D1JHNKBXMKWFS1aOswsBXQAWC1Mb4twE6jNvMyC6AhwBuHkx9AP+C7o09mpRZAa4F9TgfzgLPOPpmUWwAdAZY7o98K7HD2yaTcAugosMwZ/ba8rGgWQOuBvU5AC4Azzj6ZlFsAjUiKQauBP0Bf4Iu1Q5Z1FkAS/zFgqdGILPGy1OeiWQF1BW4DkxTXF4A5uSCTmLACEnkX4FCJFW03sDFPcMSLB1DqfSgwA5C/sll9CVwBPuQNTrmA8sihqKdyMigANRUBxWweMkg20wOTReQ38A5431k/shWQnPHIpGxpj4HLRYQyhvW86D5ws804fZL+04BRwKAi7/kMXALOJaedlrg71FgBSaBTjW85DiwpopWjWjl4s7T9wLoCoZxkSgHa29K5QCOrq2y25VjY3RoBUHfgNDDb7a51B4Et0F0t64A2ATcMFbzV9ApATifMLeuA+gPzzW5swonAHZvUXknXYw56DQy3GnHongOjrfpaZ5BsUa5Zg6uiTjbUsrFWW60BeVYxNfgKBLJ3nGXp36yAfgI98ghIrp+eAG+TekiuvydbjHagGQ880Po2SgY9AxYDUqW3bSOBE8BYzWyb5yuBw1qfWgOSLYLUNZ72KjH/rUSnXsC9ZPthHfsgsEYT1xpQOZO0ZMYjzQgwBbhl0KWSi5bqPOuApCSY6TD9Mbn2tnS5C0zQhFkHtCo5B9d8pM/lunuuUfwUGKNpaw3IOweNAx5qJgqey3X3ZqNeVsLBmrbWgLyVtHwl8kkzUfDccwssX5/01MbOOiBrfKlPudyUS05rU8dXBcmbOmuz6s0guYv7Z3ULLAROOvSqf1XQyYC8y7w1vpSJHKqdb2RA3gzqBsjHENYWgBRSASgAtSYQ/2JKRgSgANSaQKxiQKmb1QAUgPSSLTJIYRSAAlB7AvXazUcdFHVQ1EHtciAm6Zik9VqnaRTeI82mAZMaDUDKTx6AAlBls0JkUGRQZFBlBCKDKuP3H/B37EmOYmHIAAAAAElFTkSuQmCC"/></a>
+            <a href="#"><img src="data:image/png;base64,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"/></a>
+            <a href="#"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEgAAABICAYAAABV7bNHAAAAAXNSR0IArs4c6QAABVlJREFUeF7tm3fo/lMUx18/I7MU2dmzbJFkr8xsMrMSRWSLrIwIhZJC9grJyMiIFP8oe0WyMhKyM6N3ztP36fE8n885937u93ke3fPP71fPWff9Offcc+853zlUakRgTsWnGYEKUEuEVIAqQHlJpEZQjaAaQXkI1AjKw6/moBpBNYLyEPgfRdAywMHALsAKwErAd8AXwHvAw8CDwLddIjYNOWgd4Dxgb6DN39+AK4BLgF8agFoDOB44C/ixCdA2gz3ZRYBdgbu6/DoOXRcA5zr4Blk+BfYBXhr4YSvgJGAP4EKPbi9AZwCXAgcBdyc4nCJyvy0yRbYncwKwELANsDmwoP3wjW3RxugRrxeg94FVgb+AAwA5X5JuBw4paOBU4EqPfg9AawLvDCjbH7jPYyCB51jgugQ5r8hlwJl9zEof348S9gB0OHDzEAXa4w94vQrw6VRaKsDvZdV20in4CDA/sBdwBHBD08f2AHQ2cNEILwa/htfZUXzavqVy3BPA38Bqli7kg9Z1TpPTHoB0xJ7foOQ14FDgjVx0LCL1ZWeDVDfpNGskD0BHA9e36PndapXLLZG32R32+wKWC+ZNEQ7KPGSHza9tch6AdgYea1Nkv6vu0D7XqReljYbULVEdHn4dAMfZdmvl9wC0KPAVMHertn8Z/rCSX1H3jNcRQEXcc04bKWzKP6rnFOVu8gAkZY8DO7m1zjB+CNwI3AR82SK/NfBsgg2viD7ykl7mHp8XoMOAW6LKB/hVNwkonSbDaAPg5UwbTeJfA4tH9XsBkl6dUmtHDQzh/9lylG7gylW9fz8DPu5A/ygVn9grQMhEBKDVAR3pKrKmkd4G1oo6HgFIurfvq0SjtsbN/4JdWEN+eAA63ZKbcpC22RaWtHVLnia6DVAuDZEHINU1d5jW14FHAT1i7RayNH5mXSlGXZlGeucBaH3glfGvL9uD/VKeaTwAzQe0luTZ7pdXsCzwedSMByDpVA2zb1T5BPF/ZC+IYZe8AK0MfBDWPjkCtwJ61wqTFyApvhrQG+800p6AbvBhigC0mFW9urxOE6lyXzjV4QhAsqF+0pPA8qkGxyB3Z04DIAqQ1qcLn0DS8T8NpHaPqugkSgFIhvTqdyBwWkcX2CTnHUJJ969+vakA9etQRX2yNeccPs8qi7oWWc80KQDpyL8X+MmWOo91CpaY1aW3G9NjnXzNohSAZFAXP3UyJpl0MZWfWZQKkHpLeuiaVHrTLtTZ/qUCJMOlW8Spi9O9cb2uPmAOQFqA5msuTl1JITnN/Vzble5cgOTHVcCJXTmUqUfXCV0rOqMuAJIzOuo11aWHtHGRbuzrtk2MRZ3rCqCeXb0+Kpo2jjqSya+8synwaqae/4h3DVC/gU3s9q+ptJIkcBTB6uJ2TqUA0iCCtpyeR+bq3OsZhSpWdwReLGWjBECb2SP/iqWcNr3qlG4HqJFQjLoCSBGjsbwjgS2LeTujWEXqDoC6pUUpByC9CWmgYVsbEU5+lAquUP39U2yIPCgaZ28CSF1UJdq3bBpW0+3qDGjaVcf5KnFzWRLvAscAz2dpCQq3RdDulmzDPe2gH03s+nMDDX1fA/zZoV6XqjaAekp0M9asov4+YjZJ02DqiGrweyzkBUjOiVcT60fZ302UmvLQ86geue7pe3MaCzi9RacY1/C1JuE1FaaqWfkplbSFngKettE9TYJNDEUiqMlptYJU6m8ILAcsbcPgSur6/w926ggMAaA5I/X7NVE2OMU/MeDkRNBELaKkM11FUEkfx6q7AtQCfwWoApS3Q2sE1QiqEZSHQI2gPPxqDqoRVCMoD4EW6X8AutS8Sdv7oSAAAAAASUVORK5CYII="/></a>
+        </div><br><br>
+
+     <a href="#" class="button">Download CV</a>
+    </div>
+
+    <div class="himg">
+        <img src="https://img.freepik.com/free-vector/hand-drawn-multitask-business-woman_23-2148819785.jpg" width="600px" height="500px" >
+    </div>
+    </container>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
